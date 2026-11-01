@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yuhan 個人插畫作品集，分享插畫創作、海報設計、產品設計與包裝設計作品。">
+  <meta name="theme-color" content="#f7f3ed">
+  <title>Yuhan — 個人插畫作品集</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- 頂部導覽列 -->
+  <nav id="navigation" aria-label="主要導覽">
+    <a href="#home" aria-label="Yuhan 個人作品集首頁">Yuhan</a>
+    <ul>
+      <li><a href="#home">首頁</a></li>
+      <li><a href="#about">關於我</a></li>
+      <li><a href="#portfolio">個人作品</a></li>
+      <li><a href="#experience">個人經歷</a></li>
+      <li><a href="#features">個人特色</a></li>
+      <li><a href="#contact">聯絡方式</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- 首頁主視覺 -->
+    <header id="home">
+      <div>
+        <p>你好，我是</p>
+        <h1>Yuhan</h1>
+        <p>插畫師・視覺設計創作者</p>
+        <p>以插畫描繪日常靈感，透過色彩與設計，為每個想法找到溫柔而鮮明的模樣。</p>
+        <a href="#portfolio">查看作品</a>
+        <a href="#contact">聯絡我</a>
+      </div>
+      <img src="image/cover.png" alt="Yuhan 的個人形象與創作封面">
+    </header>
+
+    <!-- 個人介紹 -->
+    <section id="about" aria-labelledby="about-title">
+      <div>
+        <p>About me</p>
+        <h2 id="about-title">關於我</h2>
+        <p>我是 Yuhan，一位喜歡觀察生活、把靈感化為畫面的插畫師。相信設計不只是視覺的呈現，也能傳遞情感，讓人與作品建立連結。</p>
+        <p>我的創作風格融合細膩線條、明亮色彩與生活感，擅長依照主題梳理故事，再以插畫和設計語言呈現。服務範圍包含插畫創作、海報設計、產品設計及產品包裝設計。</p>
+        <p>創作之外，我也喜歡逛展覽、旅行、閱讀與收集生活中的小細節，讓每一次發現都成為下一個作品的起點。</p>
+      </div>
+      <figure>
+        <img src="image/member.png" alt="Yuhan 的人物照片位置">
+        <figcaption>用好奇心觀察世界，用創作記錄日常。</figcaption>
+      </figure>
+    </section>
+
+    <!-- 個人作品集 -->
+    <section id="portfolio" aria-labelledby="portfolio-title">
+      <p>Selected works</p>
+      <h2 id="portfolio-title">個人作品</h2>
+      <p>從概念發想到視覺細節，記錄不同形式的創作實踐。</p>
+      <!-- 作品分類篩選 -->
+      <div class="portfolio-filters" role="group" aria-label="依類別篩選作品">
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">全部作品</button>
+        <button class="filter-button" type="button" data-filter="illustration" aria-pressed="false">插畫設計</button>
+        <button class="filter-button" type="button" data-filter="poster" aria-pressed="false">海報設計</button>
+        <button class="filter-button" type="button" data-filter="packaging" aria-pressed="false">產品包裝</button>
+        <button class="filter-button" type="button" data-filter="product" aria-pressed="false">產品設計</button>
+      </div>
+      <div class="card-list">
+        <div class="card" data-category="poster" tabindex="0" role="button" aria-label="預覽作品：春日市集｜活動海報">
+          <img src="image/plan.png" alt="春日市集主題海報設計">
+          <div>
+            <h3>春日市集｜活動海報</h3>
+            <p>以春日植物與柔和色彩為靈感，為市集活動打造清新、友善的視覺識別。</p>
+          </div>
+        </div>
+        <div class="card" data-category="illustration" tabindex="0" role="button" aria-label="預覽作品：窗邊日記｜插畫創作">
+          <img src="image/cover.png" alt="生活觀察主題插畫作品">
+          <div>
+            <h3>窗邊日記｜插畫創作</h3>
+            <p>描繪午後窗邊的日常片刻，以溫暖筆觸呈現安靜而自在的生活風景。</p>
+          </div>
+        </div>
+        <div class="card" data-category="packaging" tabindex="0" role="button" aria-label="預覽作品：山茶日常｜產品包裝">
+          <img src="image/stage.png" alt="茶點品牌產品包裝設計">
+          <div>
+            <h3>山茶日常｜產品包裝</h3>
+            <p>為茶點品牌規劃包裝插畫與版面，讓自然質感與品牌故事融入日常使用。</p>
+          </div>
+        </div>
+        <div class="card" data-category="product" tabindex="0" role="button" aria-label="預覽作品：慢慢生活｜產品設計">
+          <img src="image/member.png" alt="日常選物產品設計概念">
+          <div>
+            <h3>慢慢生活｜產品設計</h3>
+            <p>以簡潔造型與親切色彩發展生活選物概念，兼顧美感、實用與使用體驗。</p>
+          </div>
+        </div>
+        <div class="card" data-category="poster" tabindex="0" role="button" aria-label="預覽作品：夏夜音樂會｜主視覺">
+          <img src="image/plan.png" alt="音樂活動主視覺海報">
+          <div>
+            <h3>夏夜音樂會｜主視覺</h3>
+            <p>運用層次色塊與手繪元素呈現夏夜氛圍，延伸應用於活動宣傳物。</p>
+          </div>
+        </div>
+        <div class="card" data-category="illustration" tabindex="0" role="button" aria-label="預覽作品：植物散步｜系列插畫">
+          <img src="image/stage.png" alt="植物主題系列插畫">
+          <div>
+            <h3>植物散步｜系列插畫</h3>
+            <p>從城市植物與散步路線取材，以連續插畫記錄探索街角的微小驚喜。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 個人經歷 -->
+    <section id="experience" aria-labelledby="experience-title">
+      <p>My journey</p>
+      <h2 id="experience-title">個人經歷</h2>
+      <ul>
+        <li>
+          <h3>大學學歷</h3>
+          <p>大學畢業，持續累積視覺設計、插畫創作與產品設計相關知識。</p>
+        </li>
+        <li>
+          <h3>工作經驗</h3>
+          <p>投入插畫與視覺設計工作，參與需求溝通、概念發展、設計執行及完稿流程。</p>
+        </li>
+        <li>
+          <h3>設計專案</h3>
+          <p>完成海報、插畫、產品設計與產品包裝等不同類型專案，並依專案需求延伸視覺應用。</p>
+        </li>
+        <li>
+          <h3>創作日常</h3>
+          <p>喜歡旅行、看展、閱讀與攝影，從日常觀察中收集靈感，持續練習與探索新的表現方式。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 個人特色與服務 -->
+    <section id="features" aria-labelledby="features-title">
+      <p>What I value</p>
+      <h2 id="features-title">個人特色</h2>
+      <div>
+        <article>
+          <h3>以故事為起點</h3>
+          <p>先理解每個主題想傳達的訊息，再以真誠、清晰的視覺語言連結觀者。</p>
+        </article>
+        <article>
+          <h3>部落格｜把旅行色彩帶進日常插畫</h3>
+          <p>分享旅途中收集的色票、速寫與創作練習，記錄靈感從觀察到完成的過程。</p>
+        </article>
+        <article>
+          <h3>社群分享</h3>
+          <p>透過 Instagram 分享插畫日常與作品進度，也歡迎交流想法與創作靈感。</p>
+        </article>
+        <article>
+          <h3>合作與服務</h3>
+          <p>提供插畫委託、海報視覺、產品設計及包裝設計服務，依專案需求討論合適方案。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 聯絡方式 -->
+    <section id="contact" aria-labelledby="contact-title">
+      <p>Let's work together</p>
+      <h2 id="contact-title">聯絡方式</h2>
+      <p>有合作想法、委託需求或任何問題，歡迎來信或透過社群與我聯繫。</p>
+      <p><a href="mailto:hello@example.com">電子郵件：hello@example.com</a></p>
+      <ul>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      </ul>
+      <p>合作詢問請來信簡述專案內容、預計時程與聯絡方式，我會盡快回覆。</p>
+    </section>
+  </main>
+
+  <!-- 作品圖片預覽視窗 -->
+  <dialog id="work-preview" aria-labelledby="preview-title">
+    <button class="preview-close" type="button" aria-label="關閉作品預覽">關閉</button>
+    <img class="preview-image" src="image/cover.png" alt="">
+    <div class="preview-copy">
+      <h2 id="preview-title"></h2>
+      <p class="preview-description"></p>
+    </div>
+  </dialog>
+
+  <!-- 回到頂部按鈕 -->
+  <button id="back-to-top" type="button" aria-label="回到頂部">↑</button>
+
+  <!-- 頁尾 -->
+  <footer id="footer">
+    <p>Yuhan｜日常插畫與設計</p>
+    <p>&copy; <span id="current-year">2026</span> Yuhan. 保留所有權利。</p>
+    <ul>
+      <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a></li>
+      <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
